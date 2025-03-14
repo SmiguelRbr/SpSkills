@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background: linear-gradient(#C8DAFF, #2C4674);
+    height: 800px;
+    width: 414px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bolinha1, .bolinha2 {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 4px; 
+   
+}
+
+.bolinha1 {
+    background-color: rgb(49, 49, 153);
+}
+
+.bolinha2 {
+    background-color: rgb(255, 255, 255);
+}
+
+.balls{
+    display:flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33vh;
+    font-weight: 0;
+    font-size: 65px;
+    letter-spacing: 0.4px;
+    color: #2C4674;
+   
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 30vh;
+    text-align: center;
+    color: #ffff
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.imagem-dog img{
+    position: absolute;
+    bottom: 0;
+    animation: slideUp 1s ease-out
+}
+
+.seta button{
+    position: absolute;
+    z-index: 999;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: rgb(5, 5, 90);
+    color: #fff;
+    bottom: 40px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.seta{
+    display: flex;
+    justify-content: center ;
+}
+
+.seta button:hover{
+    transform: rotate(90deg);
+}
