@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+    width: 414px;
+    height: 800px;
+    background-color: #CBE0DB;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chevron {
+    position: relative;
+    margin-left: 10px;
+    top: 15px;
+}
+
+.pesquisa {
+    position: relative;
+    top: 15px;
+}
+
+.menu {
+    position: relative;
+    margin-right: 12px;
+    top: 15px;
+}
+
+.pesquisa p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2C4674;
+}
+
+.barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+
+.barra-pesquisa input {
+    width: 365px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-image: url(arq2/search.svg);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    padding-left: 50px;
+    outline: none;
+    color: #2C4674;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.Docats {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 60px;
+}
+
+.Dogs button {
+    width: 160px;
+    height: 40px;
+    border-radius: 19px;
+    position: relative;
+    left: -10%;
+    background-image: url(arq2/fa-solid_dog_white.svg);
+    background-repeat: no-repeat;
+    background-position: left 8px center;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #519E8A;
+    color: white;
+    border: none;
+}
+
+.Cats button {
+    width: 160px;
+    height: 40px;
+    border-radius: 19px;
+    position: relative;
+    Right: -10%;
+    background-image: url(arq2/fa-solid_cat.svg);
+    background-repeat: no-repeat;
+    background-position: left 8px center;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #fff;
+    color: #2C4674;
+    border: none;
+}
+
+.chevron img {
+    transition: all ease 0.3s;
+}
+
+.chevron img:hover {
+    transform: translateX(-3px);
+}
+
+.Cats button,
+.Dogs button {
+    transition: all ease 0.3s;
+}
+
+.Cats button:hover,
+.Dogs button:hover {
+    transform: scale(1.05);
+}
+
+
+.card {
+        width: 160px;
+        height: 160px;
+        background-color: #519E8A;
+        position: relative;
+        border-radius: 23px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        animation: reverseCircle 1s ease-in-out forwards;
+        margin: 0;  /* remove margens existentes */
+        top: 0;     /* remove top position */
+        left: 0;    /* remove left position */
+
+}
+
+.card:hover{
+    animation: circle 1s ease-in-out 0.3s, cor1 2s ease-in-out 0.3s;
+    animation-fill-mode: forwards;
+}
+.card img {
+
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    
+}
+
+.card:hover img{
+    animation: imagem 1s ease-in-out 0.35s;
+    animation-fill-mode: forwards;
+}
+
+.descricao {
+        width: 160px;
+        height: 80px;
+        background-color: #fff;
+        position: relative;  /* muda de absolute para relative */
+        margin-top: -20px;  /* ajusta sobreposição com o card */
+        border-bottom-left-radius: 23px;
+        border-bottom-right-radius: 23px;
+}
+
+.card:hover + .descricao{
+    animation: cor2 0.2s ease-in-out 0.3s;
+    animation-fill-mode: forwards;;
+}
+
+.card:hover + .descricao p{
+    animation: cor2 0.2s ease-in-out 0.3s;
+    animation-fill-mode: forwards;;
+}
+
+
+.p1{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.p2{
+    font-size: 12px;
+    font-weight: regular;
+}
+
+.p1, .p2{
+    color: #2C4674;
+    margin-left: 10px;
+}
+
+.icon{
+    position: absolute;
+    right: 15px;
+    width: 28px;  /* ajuste conforme tamanho do seu ícone */
+    height: 28px;
+    background-image: url('arq2/hearthome.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out 0.3s;
+}
+
+.card:hover + .descricao .icon {
+    background-image: url('arq2/hearthome-white.svg'); /* Novo ícone */
+}
+
+.descricao .icon:hover {
+    background-image: url('arq2/hearthome-active.svg') !important;
+    transition: background-image 0.2s ease-in-out;
+}
+
+
+
+@keyframes circle {
+    0% {
+        clip-path: circle(10% at center);
+    }
+    100% {
+        clip-path: circle(100% at center);
+    }
+}
+
+@keyframes cor1 {
+    0%{
+        background-color: #519E8A;
+        
+    }
+
+    100%{
+        background-color: #fff;
+    }
+}
+
+@keyframes cor2 {
+    0%{
+        background-color: #ffffff00;
+    }
+
+    100%{
+        background-color: #519E8A;
+        color: #fff
+}
+}
+
+@keyframes imagem {
+    0%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes reverseCircle {
+    0% {
+        clip-path: circle(100% at center);
+        background-color: #fff;
+    }
+    100% {
+        clip-path: circle(100% at center);
+        background-color: #519E8A;
+    }
+}
+
+@keyframes reverseColor {
+    0% {
+        background-color: #519E8A;
+    }
+    100% {
+        background-color: #fff;
+    }
+}
+
+@keyframes reverseImage {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Aplique as animações reversas */
+.card:not(:hover) img {
+    animation: reverseImage 1s ease-in-out forwards;
+}
+
+.descricao:not(:hover) {
+    animation: reverseColor 1s ease-in-out forwards;
+}
+
+.card:not(:hover) + .descricao .icon {
+    background-image: url('arq2/hearthome.svg');
+    transition: background-image 0.2s ease-in-out;
+}
+
+.descricao .icon:not(:hover) {
+    background-image: url('arq2/hearthome.svg');
+    transition: background-image 0.2s ease-in-out;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    justify-content: center;
+    padding-top: 100px;
+}
+.alvan{
+    position: relative;
+    right: 30px;
+}
+
+.karsten{
+    position: relative;
+    right: 30px;
+    top: 10px;
+}
+
+.reigner{
+    position: relative;
+    bottom: 15px
+}
