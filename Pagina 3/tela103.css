@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+    width: 414px;
+    height: 800px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 25px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-dog{
+    width:100%;
+    height:65%;
+    display: flex;
+    background-color: #D1723F;
+    border-radius: 25px;
+    z-index: 2;
+    position: absolute
+}
+
+.infos{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    background-color: #E8DBD4;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+}
+
+.infos .p1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C4674;
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+
+.infos .p2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #2C4674;
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+
+.infos .preco{
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C4674;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -310px;
+    top: 5px;
+}
+
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 70px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #2C4674;
+    margin-left: 10px;
+    position: relative;
+    bottom: 10px;
+    white-space: nowrap; /* Impede que o texto quebre */
+}
+
+.b{
+    font-size: 14px;
+    font-weight: 600;
+    color: #2C4674;
+    margin-left: 10px;
+    position: relative;
+    top: 7px;
+    left: -128px;
+    white-space: nowrap; /* Impede que o texto quebre */
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 370px;
+    height: 50px;
+    background-color: #D1723F;
+    border-radius: 30px;
+    color: #FFF;
+    border: none;
+    transition: all ease-out 0.3s;
+}
+
+button:hover{
+    transform: scale(1.03);
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 91px;
+    left: 10px;
+    z-index: 3
+}
+
+.dog-informations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    gap :10px
+}
+
+.squares{
+    width: 85px;
+    height: 85px;
+    background-color: #ffffffc9;
+    border-radius: 20px;
+    position: relative;
+    bottom: -210px;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.squares .N{
+    position: relative;
+    font-size: 16px;
+    font-weight: 800;
+    color: #2C4674;
+    top: -15px
+}
+
+.squares .M{
+    position: relative;
+    font-size: 17px;
+    font-weight: 550;
+    color: #2C4674;
+    bottom: -10px
+}
+
+
+.unique{
+    position: absolute;
+    top: 20px;
+    left:20px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+
+.unique:hover{
+    transform: translateX(-10px);
+}

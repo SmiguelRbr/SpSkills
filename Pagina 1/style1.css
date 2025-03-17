@@ -12,7 +12,9 @@ main{
     width: 414px;
     font-family: 'Montserrat', sans-serif;
     position: relative;
-    
+    border-radius: 25px;
+    margin-top: 20px;
+    overflow: hidden;
 }
 
 body{

@@ -9,7 +9,7 @@ main {
     position: relative;
     width: 414px;
     height: 800px;
-    background-color: #CBE0DB;
+    background-color: #E8DBD4;
     font-family: 'Montserrat', sans-serif;
     border-radius: 25px;
     margin-top: 20px;
@@ -152,6 +152,7 @@ body {
     transform: scale(1.03);
 }
 
+
 header{
     position: relative;
     display: flex;
@@ -219,13 +220,13 @@ header{
     border-radius: 19px;
     position: relative;
     left: -10%;
-    background-image: url(arq2/fa-solid_dog_white.svg);
+    background-image: url(arq2/fa-solid_dog.svg);
     background-repeat: no-repeat;
     background-position: left 8px center;
     font-size: 18px;
     font-weight: 400;
-    background-color: #519E8A;
-    color: white;
+    background-color: #FFF;
+    color: #2C4674;
     border: none;
 }
 
@@ -235,13 +236,13 @@ header{
     border-radius: 19px;
     position: relative;
     Right: -10%;
-    background-image: url(arq2/fa-solid_cat.svg);
+    background-image: url(arq2/fa-solid_cat_white.svg);
     background-repeat: no-repeat;
     background-position: left 8px center;
     font-size: 18px;
     font-weight: 400;
-    background-color: #fff;
-    color: #2C4674;
+    background-color: #D1723F;
+    color: #FFF;
     border: none;
 }
 
@@ -267,7 +268,7 @@ header{
 .card {
         width: 160px;
         height: 160px;
-        background-color: #519E8A;
+        background-color: #D1723F;
         position: relative;
         border-radius: 23px;
         overflow: hidden;
@@ -366,7 +367,7 @@ header{
 
 @keyframes cor1 {
     0%{
-        background-color: #519E8A;
+        background-color: #D1723F;
         
     }
 
@@ -381,7 +382,7 @@ header{
     }
 
     100%{
-        background-color: #519E8A;
+        background-color: #D1723F;
         color: #fff
 }
 }
@@ -403,13 +404,13 @@ header{
     }
     100% {
         clip-path: circle(100% at center);
-        background-color: #519E8A;
+        background-color: #D1723F;
     }
 }
 
 @keyframes reverseColor {
     0% {
-        background-color: #519E8A;
+        background-color: #D1723F;
     }
     100% {
         background-color: #fff;
@@ -451,18 +452,25 @@ header{
     justify-content: center;
     padding-top: 100px;
 }
-.alvan{
+
+.Ariana{
     position: relative;
     right: 30px;
+    top: 20px;
+}
+.alvan{
+    position: relative;
+    right: 10px;
+    top: 7px;
 }
 
 .karsten{
     position: relative;
     right: 30px;
-    top: 10px;
+    top: -10px;
 }
 
 .reigner{
     position: relative;
-    bottom: 15px
+    bottom: 30px
 }
