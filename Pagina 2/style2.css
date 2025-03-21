@@ -281,7 +281,7 @@ header{
 }
 
 .card:hover{
-    animation: circle 0.1s ease-in-out 0.3s, cor1 1s ease-in-out 0.3s;
+    animation: cor1 1.5s ease 0.35s;
     animation-fill-mode: forwards;
 }
 .card img {
@@ -293,8 +293,9 @@ header{
 }
 
 .card:hover img{
-    animation: imagem 0.6s ease-in-out 0.35s;
+    animation: circle 0.25s ease-in-out 0.3s, imagem 0.6s ease 0.3s;
     animation-fill-mode: forwards;
+   
 }
 
 .descricao {
@@ -366,8 +367,11 @@ header{
 
 @keyframes cor1 {
     0%{
-        background-color: #519E8A;
+        background-color: #CBE0DB;
         
+    }
+    10%{
+        background-color: #519E8A;
     }
 
     100%{
