@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100..1000;1,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: #171717;
+}
+
+.cabeca {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    color: #FFF
+}
+
+
+.titulo {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: ease-in 0.2s;
+    display: inline-block;
+}
+
+.menu li a:hover {
+    color: #FFF;
+    transform: scale(1.03);
+}
+
+/* Ícone do menu hamburguer */
+.menu-icon {
+    display: none;
+    /* Esconde o ícone no desktop */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+.hidden {
+    display: none; /* Esconde o elemento por padrão */
+    color: #FFF;
+}
+
+
+
+.span{
+    display: block;
+}
+.perfil {
+    color: white;
+    padding: 100px 9%;
+    width: 100%
+}
+
+.perfil p {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.perfil img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 100px;
+}
+
+.img {
+    display: flex;
+    justify-content: flex-end;
+    /* Move a imagem para a direita */
+    align-items: flex-end;
+    position: relative;
+    top: -180px;
+    margin-right: 50px;
+}
+
+.desc p {
+    font-size: 15px;
+    color: #828282;
+    margin-top: 20px;
+}
+
+.but {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px
+}
+
+.but button{
+    width: 130px;
+    height: 30px;
+    border:#45a094;
+    color: #FFF
+}
+.but .a {
+    background-color: #45a094;
+}
+
+.but .b{
+    background-color: #171717;
+    border: solid 1px #828282;
+}
+
+
+@media (max-width: 850px) {
+
+    .hidden {
+        display: block; /* Torna o texto visível quando a tela for menor que 850px */
+        text-align: center;
+        
+    }
+
+    .desc p{
+        text-align: center;
+    }
+    .menu {
+        display: none;
+        /* Esconde o menu normal */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10%;
+        background: #222;
+        width: 220px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .menu.active {
+        display: flex;
+        /* Exibe quando clicar no ícone */
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        /* Mostra o botão do menu */
+    }
+
+    .img img{
+        display: none;
+    }
+
+    .p{
+        display: none
+    }
+
+    .but {
+        display: flex;
+        justify-content: center;  /* Centraliza os botões horizontalmente */
+       
+    }
+    
+    .but button {
+        color: #FFF;
+    }
+    
+}

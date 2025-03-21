@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SpSkills</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="cabeca">
+                <p class="titulo">Portfólio</p>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">Sobre mim</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Minhas skills</a></li>
+                    </ul>
+                    <button class="menu-icon" onclick="toggleMenu()">☰</button>
+                </nav>
+            </div>
+        </header>
+
+        <div class="perfil">
+            <p class="hidden">Ola Meu nome é Fulano</p>
+            <p class="p">Oi</p>
+            <p class="p">Sou Fulano</p>
+            <div class="desc">
+                <p>Estou aprendendo a ser um desenvolvedor Fullstack</p>
+            </div>
+            
+
+            <p></p>
+            <div class="but">
+                <button class="a">Download CV</button>
+                <button class="b">Entrar em contato</button>
+            </div>
+            <div class="img">
+                <img src="Adobe Express - file.png" alt="">
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector(".menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

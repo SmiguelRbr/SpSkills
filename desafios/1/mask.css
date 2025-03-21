@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Container{
+    background-image: url('https://wallpapers.com/images/hd/4k-ultra-hd-landscape-wallpaper-sa8ffsciekildmug.jpg');
+    
+}
+
+.Container p{
+    z-index: 2;
+    font-size: 50px;
+    mix-blend-mode: multiply;
+    position: absolute;
+}
+
+.Container img{
+    z-index: 1;
+}
