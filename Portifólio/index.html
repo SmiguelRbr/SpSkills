@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>SpSkills</title>
 </head>
 
@@ -14,44 +15,160 @@
             <div class="cabeca">
                 <p class="titulo">Portfólio</p>
                 <nav>
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="menu-icon">☰</label>
                     <ul class="menu">
-                        <li><a href="#">Sobre mim</a></li>
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Minhas skills</a></li>
+                        <li><a href="#sobre">Sobre mim</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#skills">Minhas skills</a></li>
                     </ul>
-                    <button class="menu-icon" onclick="toggleMenu()">☰</button>
+
                 </nav>
             </div>
         </header>
 
-        <div class="perfil">
-            <p class="hidden">Ola Meu nome é Fulano</p>
-            <p class="p">Oi</p>
+        <div class="perfil fade-in">
+            <p class="hidden">Ola! Meu nome é Fulano</p>
+            <p class="p">Ola!</p>
             <p class="p">Sou Fulano</p>
-            <div class="desc">
+            <div class="desc fade-in">
                 <p>Estou aprendendo a ser um desenvolvedor Fullstack</p>
             </div>
-            
+
 
             <p></p>
             <div class="but">
                 <button class="a">Download CV</button>
                 <button class="b">Entrar em contato</button>
             </div>
-            <div class="img">
+            <div class="img fade-in">
                 <img src="Adobe Express - file.png" alt="">
             </div>
 
+            <div class="sobre" id="sobre">
+                <h2>Sobre mim</h2>
+                <p>Olá! Meu nome é Miguel Rubens, tenho 16 anos e sou estudante do Senai Shunji Nishimura. Atualmente,
+                    estou
+                    treinando para competir na SP Skills #17 na modalidade de Desenvolvimento Web, sempre buscando
+                    aprimorar
+                    minhas habilidades e aprender novas tecnologias.
+                    Tenho conhecimento em HTML, CSS, JavaScript, Node.js e um pouco de PHP. Sou apaixonado por
+                    programação e
+                    desenvolvimento web, sempre explorando novas formas de criar aplicações eficientes e responsivas.
+                    Meu
+                    objetivo é me tornar um desenvolvedor fullstack altamente qualificado, combinando criatividade e
+                    funcionalidade em cada projeto.
+                    Estou sempre aberto a novos desafios e oportunidades.</p>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/miguel-rubens-de-souza-9b1081358/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/SmiguelRbr"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/m.souza442/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://mail.google.com/mail/u/2/#inbox?compose=DmwnWrRtswJqlmnhCMSZJwBtFjQGZVBtMjrNvCwqFgNGmXDBqQrNhfJFQZQFLrlJhpFKszPxmhVL"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+
+                <h2 class="h2">Projetos</h2>
+                <div class="projetos" id="projetos">
+
+                    <div class="projeto">
+                        <label for="file-upload" class="upload-label">
+                            <div class="upload-box"></div>
+                        </label>
+                        <input type="file" id="file-upload" class="file-input" accept="image/*">
+                        <input type="text" class="title" placeholder="Titulo do Projeto">
+                        <input type="text" class="desc2" placeholder="Tecnologias HTML, CSS e JS">
+                    </div>
+
+                    <div class="projeto">
+                        <label for="file-upload" class="upload-label">
+                            <div class="upload-box"></div>
+                        </label>
+                        <input type="file" id="file-upload" class="file-input" accept="image/*">
+                        <input type="text" class="title" placeholder="Titulo do Projeto">
+                        <input type="text" class="desc2" placeholder="Tecnologias HTML, CSS e JS">
+                    </div>
+
+                    <div class="projeto">
+                        <label for="file-upload" class="upload-label">
+                            <div class="upload-box"></div>
+                        </label>
+                        <input type="file" id="file-upload" class="file-input" accept="image/*">
+                        <input type="text" class="title" placeholder="Titulo do Projeto">
+                        <input type="text" class="desc2" placeholder="Tecnologias HTML, CSS e JS">
+                    </div>
+
+                    <div class="projeto">
+                        <label for="file-upload" class="upload-label">
+                            <div class="upload-box"></div>
+                        </label>
+                        <input type="file" id="file-upload" class="file-input" accept="image/*">
+                        <input type="text" class="title" placeholder="Titulo do Projeto">
+                        <input type="text" class="desc2" placeholder="Tecnologias HTML, CSS e JS">
+                    </div>
+
+                    <div class="projeto">
+                        <label for="file-upload" class="upload-label">
+                            <div class="upload-box"></div>
+                        </label>
+                        <input type="file" id="file-upload" class="file-input" accept="image/*">
+                        <input type="text" class="title" placeholder="Titulo do Projeto">
+                        <input type="text" class="desc2" placeholder="Tecnologias HTML, CSS e JS">
+                    </div>
+
+                    <div class="projeto">
+                        <label for="file-upload" class="upload-label">
+                            <div class="upload-box"></div>
+                        </label>
+                        <input type="file" id="file-upload" class="file-input" accept="image/*">
+                        <input type="text" class="title" placeholder="Titulo do Projeto">
+                        <input type="text" class="desc2" placeholder="Tecnologias HTML, CSS e JS">
+                    </div>
+
+                </div>
+
+                <h2 id="servicos" class="srv">Serviços</h2>
+                <div class="servicos" >
+                    <div class="sv">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <p>Criação de sites</p>
+
+                    </div>
+
+                    <div class="sv">
+                        <i class="fa-brands fa-node"></i>
+                        <p class="p2">Desenvolvimento back-end</p>
+
+                    </div>
+
+                    <div class="sv">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>Sites responsivos</p>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <footer>
+                <h2 class="Ms">Minhas Skills</h2>
+                <div class="skills" id="skills">
+                    <div class="si" >
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-node"></i>
+                        <i class="fa-brands fa-php"></i>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-laravel"></i>
+                    </div>
+                </div>
+            </footer>
         </div>
     </main>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector(".menu");
-            menu.classList.toggle("active");
-        }
-    </script>
 </body>
 
 </html>
