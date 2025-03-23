@@ -252,9 +252,17 @@ html {
     gap: 40px;
     margin-top: 40px;
     
+    
 }
 .icons a{
     transition: all ease-out 0.4s;
+    text-decoration: none;
+    color: #3b1072;
+    outline: none;
+}
+
+a:visited{
+    color: #3b1072;
 }
 
 .icons i{
