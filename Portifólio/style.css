@@ -116,6 +116,10 @@ html {
     margin-top: 20px
 }
 
+.but button:hover{
+    transform: scale(1.03);
+}
+
 .but button{
     width: 130px;
     height: 33px;
@@ -123,6 +127,7 @@ html {
     color: #FFF;
     transition: all ease-out 0.3s;
     cursor: pointer;
+    z-index: 1
 }
 .but .a {
     background-color: #3b1072;
